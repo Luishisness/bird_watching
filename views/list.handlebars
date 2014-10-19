@@ -1,0 +1,18 @@
+<h3>bird sightings</h3>
+<ul>	
+{{#each bird}}
+    <li>----------------------------</li>
+	<li style="color:red">{{number}}</li>
+	<li>{{name}}</li>
+{{/each}}
+	
+</ul>
+
+<form action="/birds" method="post">
+
+   <input type="text" name="name"><br>
+   <input type="submit" value="Add Another Bird">
+
+</form>
+
+<a style="text-decoration:none" href = "settings">(My Settings)</a>

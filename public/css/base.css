@@ -1,0 +1,61 @@
+/*header style*/
+.container{
+width:auto;
+height:auto;
+margin:auto;
+}
+
+body{
+ background: rgb(191,172,132);
+ font-weight: 1.5em;
+text-align:center;
+margin:auto;
+font-family: Helvetica, Arial, Sans-Serif;
+}
+
+h1{
+	color:orange;
+}
+
+.shining
+{
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat !important;
+    -webkit-background-size: 125px !important;
+    
+    color: rgba(255, 255, 255, 0.5) !important;
+    -webkit-background-clip: text !important;
+    
+    -webkit-animation-name: shine !important;
+    -webkit-animation-duration: 5s !important;
+    -webkit-animation-iteration-count: infinite !important;
+    color:orange; 
+}
+
+@-webkit-keyframes shine
+{
+    0%
+    {
+        background-position: top left;
+    }
+    100%
+    {
+        background-position: top right;
+    }
+}
+
+ul,li{list-style-type: none !important;
+padding:15px;
+}
+
+/*B&W*/
+img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+img:hover {
+  -webkit-filter: grayscale(100%);
+}
